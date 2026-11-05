@@ -4,8 +4,90 @@ body {
     font-size: 16px;
 }
 
+
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.overview-hero{
+    background-color: aliceblue;
+}
+
+.learn-about .container{
+    flex-direction: column;
+    align-items: start;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.card{
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 10px;
+    padding: 10px;
+}
+
+.testing .container{
+    display: grid;
+    grid-template-columns: 1fr 0.15fr;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.testing .container .cta{
+    border: 1px solid;
+    padding: 7px;
+    background-color: green;
+    text-align: center;
+}
+
+.stories .container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.newsletter .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    gap: 10px;
+}
+
+input{
+    padding: 10px;
+}
+
+.btn{
+    color: white;
+
 }
